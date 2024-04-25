@@ -7,7 +7,11 @@
   --color-one: white;
   --footer-coor: rgba(144, 212, 198, 1);
   --paragraph-color: rgba(69, 141, 126, 1);
+  --color-three: black;
+  --link-one: rgba(250, 212, 0, 1);
+  --link-two: rgba(254, 119, 102, 1);
 }
+
 body {
   width: 100%;
   display: flex;
@@ -24,6 +28,20 @@ header {
   position: absolute;
   display: flex;
   justify-content: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nav-list:hover {
+  width: 140px;
+  height: 56px;
+  text-align: center;
+  background-color: var(--color-one);
+  color: var(--color-three);
+  border-radius: 28px;
 }
 h1 {
   font-size: 56px;
@@ -56,11 +74,13 @@ h3 {
 }
 .navigation {
   width: 465px;
+  height: 56px;
   color: var(--color-one);
   font-size: 18px;
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .arrow {
   margin-top: 100px;
@@ -88,8 +108,17 @@ h2 {
   font-weight: bold;
 }
 span {
+  width: 137px;
   font-size: 15px;
   font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.span-one {
+  border-bottom: 3px solid var(--link-one);
+}
+.span-two {
+  border-bottom: 3px solid var(--link-two);
 }
 .first-container {
   width: 445px;
@@ -191,9 +220,21 @@ footer {
   justify-content: space-between;
   list-style: none;
 }
+.info {
+  cursor: pointer;
+}
+.info:hover {
+  color: var(--color-one);
+}
 
 .icons {
   width: 164px;
   display: flex;
   justify-content: space-between;
+}
+.footer-icons {
+  cursor: pointer;
+}
+.footer-icons:hover {
+  background-color: var(--color-one);
 }
